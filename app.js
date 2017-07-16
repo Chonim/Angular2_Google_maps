@@ -9,6 +9,7 @@ var mongoose = require('mongoose');
 var appRoutes = require('./routes/app');
 var messageRoutes = require('./routes/messages');
 var userRoutes = require('./routes/user');
+var mapRoutes = require('./routes/map');
 
 var app = express();
 mongoose.connect('sphinfo:sphinfo2012@ds151702.mlab.com:51702/angular2-deployment');
@@ -33,6 +34,7 @@ app.use(function (req, res, next) {
 });
 
 app.use('/message', messageRoutes);
+app.use('/map', mapRoutes);
 app.use('/user', userRoutes);
 app.use('/', appRoutes);
 

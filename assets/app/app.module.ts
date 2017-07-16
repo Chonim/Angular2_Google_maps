@@ -1,5 +1,6 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ApplicationRef } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HttpModule } from "@angular/http";
 
@@ -8,6 +9,10 @@ import { MessageComponent } from "./messages/message.component";
 import { MessageListComponent } from "./messages/message-list.component";
 import { MessageInputComponent } from "./messages/message-input.component";
 import { MessagesComponent } from "./messages/messages.component";
+import { CoordsComponent } from "./coords/coords.component";
+import { CoordsListComponent } from "./coords/coords-list.component";
+import { CoordsInputComponent } from "./coords/coords-input.component";
+import { CoordsArrayComponent } from "./coords/coordsArray.component";
 import { AuthenticationComponent } from "./auth/authentication.component";
 import { HeaderComponent } from "./header.component";
 import { routing } from "./app.routing";
@@ -25,6 +30,10 @@ import { ErrorService } from "./errors/error.service";
         MessageListComponent,
         MessageInputComponent,
         MessagesComponent,
+        CoordsComponent,
+        CoordsListComponent,
+        CoordsInputComponent,
+        CoordsArrayComponent,
         AuthenticationComponent,
         HeaderComponent,
         LogoutComponent,
