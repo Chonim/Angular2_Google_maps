@@ -12,7 +12,7 @@ var userRoutes = require('./routes/user');
 var mapRoutes = require('./routes/map');
 
 var app = express();
-mongoose.connect('sphinfo:sphinfo2012@ds151702.mlab.com:51702/angular2-deployment');
+mongoose.connect('localhost:27017/node-angular');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
